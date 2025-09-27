@@ -2,7 +2,6 @@
   // 🛠 Interface
   "breadcrumbs.enabled": false,
   "editor.glyphMargin": false,
-  "workbench.activityBar.location": "default",
   "workbench.editor.labelFormat": "short",
   "editor.tabSize": 2,
 

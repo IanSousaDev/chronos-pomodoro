@@ -1,12 +1,12 @@
-import './styles/theme.css';
-import './styles/global.css';
-
 import { Container } from './components/Container';
-import { CountDown } from './components/CountDown';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
-import { CirclePlay } from 'lucide-react';
+import { CountDown } from './components/CountDown';
 import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
+
+import './styles/theme.css';
+import './styles/global.css';
 
 export function App() {
   return (
@@ -24,29 +24,21 @@ export function App() {
       </Container>
 
       <Container>
-        <form action='' className='form'>
+        <form className='form' action=''>
           <div className='formRow'>
-            <DefaultInput
-              labelText='Tarefa'
-              id='meuInput'
-              type='text' 
-              required
-            />
+            <DefaultInput labelText='Título' id='meuInput' type='text' placeholder='Digite algo'/>
           </div>
 
           <div className='formRow'>
-            <span>Lorem ipsum dolor sit amet consectetur.</span>
+            <p>Lorem ipsum dolor sit amet.</p>
           </div>
 
           <div className='formRow'>
-            <span>ciclos</span>
-            <span>0 0 0 0 0</span>
+            <Cycles />
           </div>
 
           <div className='formRow'>
-            <button>
-              <CirclePlay />
-            </button>
+            <button>Enviar</button>
           </div>
         </form>
       </Container>
